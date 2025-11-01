@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Practice App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-left"></div>
+  <div class="header-title">Social App</div>
+  <div class="header-right">
+    <img src="https://via.placeholder.com/40" id="profile-icon" class="profile-icon" alt="Profile">
+  </div>
+</header>
+
+<main id="main-content">
+  <div id="feed-page" class="page active">
+    <div id="feed-posts"></div>
+  </div>
+  <div id="search-page" class="page">
+    <h2>Search</h2>
+    <p>Search functionality coming soon...</p>
+  </div>
+  <div id="chats-page" class="page">
+    <h2>Chats</h2>
+    <p>Chat functionality coming soon...</p>
+  </div>
+  <div id="profile-page" class="page">
+    <div id="profile-info">
+      <img id="profile-pic" src="https://via.placeholder.com/80" alt="Profile Picture">
+      <div id="profile-stats">
+        <div><span id="post-count">0</span><br>Posts</div>
+        <div><span id="followers-count">0</span><br>Followers</div>
+        <div><span id="following-count">0</span><br>Following</div>
+      </div>
+      <h3 id="profile-username"></h3>
+    </div>
+    <div id="profile-posts"></div>
+  </div>
+</main>
+
+<nav class="bottom-nav">
+  <div class="nav-item" data-page="search-page">Search</div>
+  <div class="nav-item active" data-page="feed-page">Feed</div>
+  <div class="nav-item" data-page="chats-page">Chats</div>
+</nav>
+
+<script src="js/app.js"></script>
+</body>
+</html>
